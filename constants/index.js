@@ -66,36 +66,61 @@ export const integrations = [
     id: 4,
     imgUrl: "/line.png",
     title: "Line",
-    description: "",
+    description:
+      "Connect OmniGPT with Line to start\ncollaborating with your team and automate\nyour workflow.",
   },
   {
     id: 5,
     imgUrl: "/trello.png",
     title: "Trello",
-    description: "",
+    description:
+      "Automate your Trello boards with OmniGPT\nand manage your team's tasks more\nefficiently.",
   },
   {
     id: 6,
     imgUrl: "/jira.png",
     title: "Jira",
-    description: "",
+    description:
+      "Connect OmniGPT with Jira and automate\nyour team's workflow to improve efficiency\nand productivity.",
   },
   {
     id: 7,
     imgUrl: "/google.png",
     title: "Google Workspace",
-    description: "",
-  },
-  {
-    id: 8,
-    imgUrl: "/github.png",
-    title: "GitHub",
-    description: "",
+    description:
+      "Integrate OmniGPT with your Google\nWorkspace account to streamline your\nworkflow and enhance team collaboration.",
   },
   {
     id: 9,
     imgUrl: "/notion.png",
     title: "Notion",
-    description: "",
+    description:
+      "Integrate OmniGPT with Notion to automate\nyour workflow and collaborate with your\nteam more effectively.",
+  },
+  {
+    id: 8,
+    imgUrl: "/github.png",
+    title: "GitHub",
+    description:
+      "Use OmniGPT to automate your GitHub\nworkflow and streamline your team's\ndevelopment process.",
+  },
+];
+
+export const opinions = [
+  {
+    id: 1,
+    title:
+      "OmniGPT has completely\ntransformed the way my team works together.",
+    text: "“With the ability to seamlessly communicate across\nmultiple channels, we are able to collaborate in real-time and make\ndecisions faster than ever. Plus, the AI-powered chatbot saves us time\nand resources by handling routine tasks and inquiries. I would highly\nrecommend OmniGPT to any organization looking to improve their\nproductivity and efficiency”",
+    imgUrl: "/man.png",
+    name: "Luke John",
+  },
+  {
+    id: 2,
+    title:
+      "OmniGPT has completely\ntransformed the way my team works together.",
+    text: "“I was skeptical about using an AI-powered chat tool, but Omnigpt has\ncompletely changed my mind. It's like having a virtual assistant that's\nalways available to manage my conversations and keep me organized. I\ndon't know how I managed without it!”",
+    imgUrl: "/woman.png",
+    name: "Luka John",
   },
 ];

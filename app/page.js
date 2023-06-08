@@ -1,5 +1,12 @@
 import { Navbar, Footer } from "@/components";
-import { Hero, Phone, About, Accessibility, Integrations } from "@/sections";
+import {
+  Hero,
+  Phone,
+  About,
+  Accessibility,
+  Integrations,
+  PepTalking,
+} from "@/sections";
 
 const Page = () => {
   return (
@@ -18,8 +25,14 @@ const Page = () => {
       <div className="bg-black relative">
         <Integrations />
       </div>
+      <div className="relative">
+        <PepTalking />
+      </div>
+      <div className="bg-black relative">
+        <Footer />
+      </div>
     </div>
-  )
-}
+  );
+};
 
 export default Page;

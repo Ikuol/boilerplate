@@ -3,6 +3,9 @@ import Footer from "./Footer";
 import DisplayText from "./DisplayText";
 import Mode from "./Mode";
 import Inclusion from "./Inclusion";
+import FreeTrial from "./FreeTrial";
+import SignIn from "./SignIn";
+import SignUp from "./SignUp";
 
 
 export {
@@ -10,5 +13,8 @@ export {
     Footer,
     DisplayText,
     Mode,
-    Inclusion
+    Inclusion,
+    FreeTrial,
+    SignIn,
+    SignUp
 }

@@ -8,7 +8,7 @@ import { inclusions } from "@/constants";
 const Accessibility = () => {
   return (
     <section className={`${styles.xPaddings} py-12 relative`}>
-        <div className="container mx-auto flex flex-col
+        <div className="mx-auto flex flex-col
         items-center justify-center gap-y-10">
             <div className="flex">
                 <p className="text-white text-6xl text-center
