@@ -18,18 +18,16 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      let { data, error } = await supabase.auth.signUp({
+      let { error } = await supabase.auth.signUp({
         email: email,
         password: password,
         options: {
-          redirect: "http://localhost:3000/signin",
+          emailRedirectTo: "http://localhost:3000/signin",
         },
       });
 
       if (error) {
         console.error("Error signing up:", error.message);
-      } else {
-        console.log(data);
       }
     } catch (error) {
       console.error("Error signing up:", error.message);

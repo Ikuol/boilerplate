@@ -6,6 +6,7 @@ import Inclusion from "./Inclusion";
 import FreeTrial from "./FreeTrial";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
+import TypingText from "./TypingText";
 
 
 export {
@@ -16,5 +17,6 @@ export {
     Inclusion,
     FreeTrial,
     SignIn,
-    SignUp
+    SignUp,
+    TypingText
 }

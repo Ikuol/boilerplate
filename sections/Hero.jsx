@@ -1,6 +1,8 @@
 "use client";
 
 import styles from "@/styles";
+import { motion } from "framer-motion";
+import { fadeIn } from "@/utils/motion";
 
 const Hero = () => {
   return (
@@ -56,22 +58,28 @@ const Hero = () => {
               className="bg-pink w-[100px] h-[100px]
                 rounded-full"
             />
-            <img
-              src="/fauxels.png"
-              alt="people"
-              className="absolute -top-[3.5rem] left-6 w-[255px]"
-            />
+            <motion.div
+              variants={fadeIn("right", "spring", 0.5, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              className="absolute -top-[3.5rem] left-6"
+            >
+              <img src="/fauxels.png" alt="people" className="w-[255px]" />
+            </motion.div>
           </div>
           <div className="flex gap-8 relative">
             <div
               className="bg-green w-[100px] h-[100px]
                 rounded-full"
             />
-            <img
-              src="/kindel.png"
-              alt="people"
-              className="absolute -top-[4.3rem] left-[35%] w-[280px]"
-            />
+            <motion.div
+              variants={fadeIn("left", "spring", 0.5, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              className="absolute -top-[4.3rem] left-[35%]"
+            >
+              <img src="/kindel.png" alt="people" className=" w-[280px]" />
+            </motion.div>
             <div
               className="bg-white w-[300px] h-[100px]
                 rounded-l-full rounded-r-full"
@@ -96,11 +104,14 @@ const Hero = () => {
               className="bg-green w-[300px] h-[100px]
                 rounded-l-full rounded-br-full"
             />
-            <img
-              src="/andrea.png"
-              alt="people"
-              className="absolute -top-[9.2rem] w-[280px]"
-            />
+            <motion.div
+              variants={fadeIn("right", "spring", 0.5, 0.75)}
+              initial="hidden"
+              whileInView="show"
+              className="absolute -top-[9.2rem] "
+            >
+              <img src="/andrea.png" alt="people" className="w-[280px]" />
+            </motion.div>
             <div
               className="bg-pink w-[100px] h-[100px]
                 rounded-r-full rounded-tl-full"

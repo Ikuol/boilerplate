@@ -14,16 +14,21 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      let { data, error } = await supabase.auth.signInWithPassword({
+      let { error } = await supabase.auth.signInWithPassword({
         email: email,
         password: password,
       });
 
+      const {
+        data: { user },
+      } = await supabase.auth.getUser();
+
       if (error) {
         console.error("Error signing up:", error.message);
       } else {
-        console.log(data);
+        window.location = `/dashboard/${user.id}`;
       }
     } catch (error) {
       console.error("Error signing up:", error.message);
