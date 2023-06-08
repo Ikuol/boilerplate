@@ -1,8 +1,8 @@
 "use client";
 
+import { useState } from "react";
 import { supabase } from "@/supabase/supabaseClient";
 import Link from "next/link";
-import { useState } from "react";
 
 const SignUp = () => {
   const [username, setUsername] = useState("");
@@ -18,16 +18,18 @@ const SignUp = () => {
     e.preventDefault();
 
     try {
-      const { user, error } = await supabase.auth.signUp({
-        email,
-        password,
+      let { data, error } = await supabase.auth.signUp({
+        email: email,
+        password: password,
+        options: {
+          redirect: "http://localhost:3000/signin",
+        },
       });
 
       if (error) {
         console.error("Error signing up:", error.message);
       } else {
-        console.log("User signed up:", user);
-        // Redirect or show success message
+        console.log(data);
       }
     } catch (error) {
       console.error("Error signing up:", error.message);

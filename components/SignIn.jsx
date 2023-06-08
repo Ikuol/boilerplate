@@ -14,15 +14,19 @@ const SignIn = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const { error } = await supabase.auth.signInWithPassword({
-      email: email,
-      password: password,
-      options: {
-        emailRedirectTo: "https://fb.com",
-      },
-    });
-    if (error) {
-      console.log(error);
+    try {
+      let { data, error } = await supabase.auth.signInWithPassword({
+        email: email,
+        password: password,
+      });
+
+      if (error) {
+        console.error("Error signing up:", error.message);
+      } else {
+        console.log(data);
+      }
+    } catch (error) {
+      console.error("Error signing up:", error.message);
     }
   };
 
