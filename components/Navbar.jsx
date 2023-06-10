@@ -20,12 +20,13 @@ const Navbar = () => {
           >
             Blog
           </h2>
-          <h2
+          <Link
+            href="/stripepayment"
             className="text-white text-[20px]
                 cursor-pointer"
           >
-            Contact us
-          </h2>
+            Donation
+          </Link>
           <Link
             href="/signin"
             className="text-white text-[20px]

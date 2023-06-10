@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
 
-const Dashboard = ({params}) => {
-  return (
-    <div>page</div>
-  )
-}
+const Dashboard = ({ params }) => {
+  console.log(params);
+  return <div>page</div>;
+};
 
-export default Dashboard
+export default Dashboard;

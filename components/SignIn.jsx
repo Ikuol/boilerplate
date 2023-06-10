@@ -1,8 +1,11 @@
 "use client";
 
-import { supabase } from "@/supabase/supabaseClient";
-import Link from "next/link";
 import { useState } from "react";
+
+import Link from "next/link";
+import { supabase } from "@/supabase/supabaseClient";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const SignIn = () => {
   const [email, setEmail] = useState("");
@@ -26,8 +29,18 @@ const SignIn = () => {
       } = await supabase.auth.getUser();
 
       if (error) {
-        console.error("Error signing up:", error.message);
+        toast.error("Error signing in, verify the values of your fields !", {
+          position: toast.POSITION.TOP_RIGHT,
+        });
       } else {
+        const { error } = await supabase
+          .from("myusers")
+          .insert([{ email: email, password: password, user_id: user.id }]);
+        if (error) {
+          toast.error("Error, try later !", {
+            position: toast.POSITION.TOP_RIGHT,
+          });
+        }
         window.location = `/dashboard/${user.id}`;
       }
     } catch (error) {
@@ -73,6 +86,7 @@ const SignIn = () => {
           Sign Up
         </Link>
       </span>
+      <ToastContainer />
     </div>
   );
 };
