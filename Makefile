@@ -1,4 +1,5 @@
+MSG=""
 gt:
 	git add .
-	git commit -m "Made some progress on this personnal project"
+	git commit -m "$(MSG)"
 	git push origin
