@@ -1,3 +1,5 @@
+"use client";
+
 import getStripe from "@/lib/getStripe";
 
 import { toast, ToastContainer } from "react-toastify";
