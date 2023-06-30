@@ -19,7 +19,7 @@ const Navbar = () => {
             Blog
           </h2>
           <Link
-            href="/"
+            href="/stripepayment"
             className="text-white text-[20px]
                 cursor-pointer"
           >
