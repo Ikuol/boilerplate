@@ -1,20 +1,19 @@
-'use client';
+"use client";
 
-const DisplayText = ({title, text, active, handleClick}) => {
+const DisplayText = ({ title }) => {
   return (
-    <div className={`${active ? "" : "border-b border-b-white"}
-    w-[480px] cursor-pointer`}
-    onClick={() => handleClick(!active)}
+    <div
+      className={` border-b
+    w-[480px] cursor-pointer items-center justify-center`}
     >
-        <h1 className="text-white font-bold
-        text-[30px] mb-10">
-            {title}
-        </h1>
-        <p className="text-sm hidden font-[400] mt-2">
-            {text}
-        </p>
+      <h1
+        className="text-white font-bold
+        text-[30px] mb-2 mt-2"
+      >
+        {title}
+      </h1>
     </div>
-  )
-}
+  );
+};
 
-export default DisplayText
+export default DisplayText;

@@ -14,21 +14,21 @@ const Navbar = () => {
         <div className={`${styles.flexCenter} gap-5`}>
           <h2
             className="text-white text-[20px]
-                cursor-pointer"
+            font-bold hover:text-green  cursor-pointer"
           >
             Blog
           </h2>
           <Link
             href="/stripepayment"
             className="text-white text-[20px]
-                cursor-pointer"
+             font-bold hover:text-green cursor-pointer"
           >
-            Donation
+            Upgrade
           </Link>
           <Link
             href="/signin"
             className="text-white text-[20px]
-                cursor-pointer"
+             font-bold hover:text-green cursor-pointer"
           >
             Sign in
           </Link>

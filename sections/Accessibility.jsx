@@ -14,12 +14,7 @@ const Accessibility = () => {
         className="mx-auto flex flex-col
         items-center justify-center gap-y-10"
       >
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          className="flex relative flex-col"
-        >
+        <div className="flex relative flex-col">
           <TypingText
             title="Accessible pricing"
             textStyles="text-green text-6xl text-center font-semibold"
@@ -29,7 +24,7 @@ const Accessibility = () => {
             title="for all users"
             textStyles="text-white text-6xl text-center font-semibold"
           />
-        </motion.div>
+        </div>
         <div
           className="flex w-[400px] h-full min-h-[600px] rounded-[10px]
             bg-gray-700 flex-col gap-y-6 p-12"
@@ -60,7 +55,7 @@ const Accessibility = () => {
               Upgrade your productivity with Ai- powered technology.
             </p>
             <span className="flex mt-3 items-center gap-x-3">
-              <p className="text-5xl font-[900]">$7</p>
+              <p className="text-5xl font-[900]">$20</p>
               <span className="flex flex-col -mt-1">
                 <p>per</p>
                 <p>month</p>

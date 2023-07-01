@@ -7,16 +7,17 @@ import FreeTrial from "./FreeTrial";
 import SignIn from "./SignIn";
 import SignUp from "./SignUp";
 import TypingText from "./TypingText";
-
+import Option from "./Option";
 
 export {
-    Navbar,
-    Footer,
-    DisplayText,
-    Mode,
-    Inclusion,
-    FreeTrial,
-    SignIn,
-    SignUp,
-    TypingText
-}
+  Navbar,
+  Footer,
+  DisplayText,
+  Mode,
+  Inclusion,
+  FreeTrial,
+  SignIn,
+  SignUp,
+  TypingText,
+  Option,
+};

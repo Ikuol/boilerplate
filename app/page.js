@@ -10,7 +10,7 @@ import {
 
 const Page = () => {
   return (
-    <div className="bg-primary overflow-hidden">
+    <div className="bg-primary overflow-y-hidden">
       <Navbar />
       <Hero />
       <div className="relative">

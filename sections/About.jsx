@@ -1,6 +1,5 @@
 "use client";
 
-import { useState } from "react";
 
 import { motion } from "framer-motion";
 import styles from "@/styles";
@@ -9,7 +8,6 @@ import { DisplayText, TypingText } from "@/components";
 import { staggerContainer } from "@/utils/motion";
 
 const About = () => {
-  const [active, setActive] = useState(false);
 
   return (
     <section className={`${styles.xPaddings} py-12 relative`}>
@@ -88,8 +86,6 @@ const About = () => {
               <DisplayText
                 key={data.id}
                 {...data}
-                active={active}
-                handleClick={setActive}
               />
             );
           })}

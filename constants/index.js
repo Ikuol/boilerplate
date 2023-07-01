@@ -2,22 +2,18 @@ export const datas = [
   {
     id: 1,
     title: "Seamless Collaboration",
-    text: "Easily collaborate with team members\non projects and ideas in real-time, boosting\nproductivity and teamwork",
   },
   {
     id: 2,
     title: "Multi-Channel Support",
-    text: "Easily collaborate with team members\non projects and ideas in real-time, boosting\nproductivity and teamwork",
   },
   {
     id: 3,
     title: "Advanced AI Capabilities",
-    text: "Easily collaborate with team members\non projects and ideas in real-time, boosting\nproductivity and teamwork",
   },
   {
     id: 4,
     title: "Another Support",
-    text: "Easily collaborate with team members\non projects and ideas in real-time, boosting\nproductivity and teamwork",
   },
 ];
 
@@ -122,5 +118,35 @@ export const opinions = [
     text: "“I was skeptical about using an AI-powered chat tool, but Omnigpt has\ncompletely changed my mind. It's like having a virtual assistant that's\nalways available to manage my conversations and keep me organized. I\ndon't know how I managed without it!”",
     imgUrl: "/woman.png",
     name: "Luka John",
+  },
+];
+
+export const freeOptions = [
+  {
+    id: 1,
+    text: "Available when demand is low",
+  },
+  {
+    id: 2,
+    text: "Standard response speed",
+  },
+  {
+    id: 3,
+    text: "Regular model updates",
+  },
+];
+
+export const paidOptions = [
+  {
+    id: 1,
+    text: "Available even when demand is high",
+  },
+  {
+    id: 2,
+    text: "Faster response speed",
+  },
+  {
+    id: 3,
+    text: "Priority access to new features",
   },
 ];
